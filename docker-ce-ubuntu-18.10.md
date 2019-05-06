@@ -4,6 +4,7 @@ refer to [https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.
 * Bionic 18.04 (LTS)
 * Xenial 16.04 (LTS)
 
+# install
 ```terminal
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get update
@@ -14,4 +15,10 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo systemctl start docker
+```
+
+# uninstall
+```
+sudo apt-get purge docker-ce
+sudo rm -rf /var/lib/docker
 ```
