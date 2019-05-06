@@ -5,6 +5,7 @@ refer to [https://docs.docker.com/v17.09/engine/installation/linux/docker-ce/ubu
 * Xenial 16.04 (LTS)
 * Trusty 14.04 (LTS)
 
+# install
 ```terminal
 sudo apt-get remove docker docker-engine docker.io
 sudo apt-get update
@@ -15,4 +16,10 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt-get install docker-ce
 sudo systemctl start docker
+```
+
+# uninstall
+```terminal
+sudo apt-get purge docker-ce
+sudo rm -rf /var/lib/docker
 ```
